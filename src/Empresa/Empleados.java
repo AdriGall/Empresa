@@ -3,25 +3,29 @@ package Empresa;
 // declaracion de clase
 public class Empleados {
     //Atributos
-    String nombre;
-    int edad;
-    int Noempleado;
-    
-    //Metodos
-    
-   //metodo constructor
-    public Empleados(String _nombre,int _edad,int _Noempleado){
-       nombre = _nombre;
-       edad = _edad;
-       Noempleado = _Noempleado;
-     
+    private String nombre;
+    private int edad;
+    private int Noempleado;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getNoempleado() {
+        return Noempleado;
+    }
+
+    public Empleados(String nombre, int edad, int Noempleado) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.Noempleado = Noempleado;
     }
     
-    public void mostrarDatos(){
-        System.out.println("El nombre es: "+nombre);
-        System.out.println("la edad es: "+edad);
-        System.out.println("El numero de empleado es: "+Noempleado);
-        
-        
-    }
+    
+    
 }
+
